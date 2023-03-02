@@ -1,0 +1,78 @@
+html,
+body {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*{ 
+  font-family: "Andale Mono", AndaleMono, monospace;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px 5px 0px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #d005da;
+  font-size: 20px;
+  font-weight: 1000;
+}
+button:hover{
+  background-color: #9c2daf;
+  box-shadow: 0px 15px 20px rgba(195, 28, 220, 0.608);
+  color: #fff;
+  transform: translateY(-7px);
+}
+button:active{
+  -webkit-box-shadow: inset 2px 2px 20px black;
+  -moz-box-shadow:    inset 2px 2px 20px black;
+  box-shadow:         inset 2px 2px 20px black;
+}
+input[type=number]{
+  width: 50px;
+  height: 40px;
+  margin: 10px 10px 5px 0px;
+  padding: 0 20px;
+  border: none;
+  background-color: #69446f;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.2rem;
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input:focus{
+  outline: none;
+}
+input:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 30%;
+  background: #fff;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  user-select: none;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
